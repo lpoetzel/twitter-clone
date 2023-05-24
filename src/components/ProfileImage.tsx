@@ -9,7 +9,7 @@ export function ProfileImage({ src, className = " " }: ProfileImageProps) {
   return (
     <>
       <div
-        className={`e-12 relative h-12 overflow-hidden rounded-full ${className} `}
+        className={`relative h-12 w-12 overflow-hidden rounded-full ${className} `}
       >
         {src == null ? null : (
           <Image src={src} alt="Profile Image" quality={100} fill />
