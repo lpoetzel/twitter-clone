@@ -11,7 +11,7 @@ function updateTextAreaSize(textArea?: HTMLTextAreaElement) {
 
 export function NewTweetForm() {
   const session = useSession();
-  if (session.status !== "authenticated") return;
+  if (session.status !== "authenticated") return null;
   return <Form />;
 }
 
