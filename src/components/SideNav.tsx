@@ -28,7 +28,6 @@ export function SideNav() {
                   <span className="hidden text-lg md:inline">Profile</span>
                 </span>
               </IconHoverEffect>
-              Profil
             </Link>
           </li>
         )}
