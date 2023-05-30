@@ -49,13 +49,14 @@ function Form() {
         const newCacheTweet = {
           ...newTweet,
           likeCount: 0,
-          likeByMe: false,
+          likedByMe: false,
           user: {
             id: session.data.user.id,
-            name: session.data.user.name,
-            image: session.data.user.image,
+            name: session.data.user.name || null,
+            image: session.data.user.image || null,
           },
         };
+
         return {
           ...oldData,
           pages: [
@@ -70,13 +71,13 @@ function Form() {
     },
   });
 
+  if (session.status !== "authenticated") return null;
+
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
     createTweet.mutate({ content: inputValue });
   }
-
-  if (session.status !== "authenticated") return null;
   return (
     <>
       <form
