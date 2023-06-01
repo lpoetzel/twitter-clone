@@ -2,6 +2,7 @@
 This Project is a basic Twitter clone to learn/practice working with the T3 Stack including
 
 - [Next.js](https://nextjs.org)
+- [Typescript](https://www.typescriptlang.org/)
 - [NextAuth.js](https://next-auth.js.org)
 - [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
