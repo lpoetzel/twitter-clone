@@ -1,4 +1,5 @@
-# This Project is a basic Twitter clone to learn/practice working with the T3 Stack including
+# Twitter - Clone 
+This Project is a basic Twitter clone to learn/practice working with the T3 Stack including
 
 - [Next.js](https://nextjs.org)
 - [NextAuth.js](https://next-auth.js.org)
